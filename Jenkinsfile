@@ -1,9 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('fffff') {
+    stage('inicio') {
       steps {
-        sleep 4
+        echo 'Hola desde stage inicio'
+      }
+    }
+    stage('test2') {
+      steps {
+        echo 'hola desde stage2'
       }
     }
   }
